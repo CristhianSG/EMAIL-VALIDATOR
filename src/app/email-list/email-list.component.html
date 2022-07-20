@@ -1,0 +1,13 @@
+<div>
+  <form action="" (ngSubmit)="onSubmit()" [formGroup]="frmEmail">
+    <div class="emails-container">
+      <div class="email" *ngFor="let email of emailsList">
+        <p>
+          {{ email }}
+        </p>
+        <a (click)="deleteEmail(email)">X</a>
+      </div>
+    </div>
+    <input type="text" formControlName="email" />
+  </form>
+</div>
