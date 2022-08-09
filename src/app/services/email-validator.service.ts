@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class EmailValidatorService {
   private emailsList: string[] = ['cristhian@miro.com', 'fabio@miro.com'];
   emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
   constructor() {}
 
   addEmail(email: string) {

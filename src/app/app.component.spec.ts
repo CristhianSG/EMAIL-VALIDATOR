@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmailListComponent } from './email-list/email-list.component';
 
+
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -27,6 +28,7 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('email-validator');
   });
+
 
   /*
   it('should render title', () => {
