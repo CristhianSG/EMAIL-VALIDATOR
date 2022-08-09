@@ -13,4 +13,12 @@ describe('EmailValidatorService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('validate fabio@miro.com', () => {
+    expect(service.validaEmail('fabio@miro.com')).toBeTruthy();
+  });
+
+  it('validate 1', () => {
+    expect(service.validaEmail('1')).toBeFalsy();
+  });
 });

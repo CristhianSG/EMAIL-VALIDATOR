@@ -22,6 +22,14 @@ export class EmailValidatorService {
     }
   }
 
+  validaEmail(email: String):boolean{
+    if(email.match(this.emailPattern)){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   deleteEmail(email: string) {
     this.emailsList = this.emailsList.filter((i) => i !== email);
     console.log(this.emailsList);
