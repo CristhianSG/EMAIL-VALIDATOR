@@ -1,0 +1,47 @@
+.emails-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 50px;
+}
+
+.email {
+  display: flex;
+  gap: 10px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.contenedor-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 850px;
+  height: 300px;
+  border: 0;
+}
+
+.alinear-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-card{
+  font-size: 20px;
+}
+
+.bg-header{
+  background: #19191a
+}
+
+.bg-card{
+  /* The image used */
+  background-image: url("../../assets/old-black-background-texture.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

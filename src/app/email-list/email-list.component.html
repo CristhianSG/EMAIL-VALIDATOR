@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card text-center bg-card text-white contenedor-form">
+        <p class="card-header w-100 titulo-card bg-header">
+          Validador de correos
+        </p>
+        <div class="card-body alinear-items">
+          <form action="" (ngSubmit)="onSubmit()" [formGroup]="frmEmail">
+            <div class="mb-3 emails-container alinear-items">
+              <div class="email" *ngFor="let email of emailsList">
+                <p>
+                  {{ email }}
+                </p>
+                <a (click)="deleteEmail(email)">X</a>
+              </div>
+            </div>
+            <div class="mb-3">
+              <p style="font-size: 22px;">
+                Ingrese correo electrónico aquí:
+              </p>
+              <input type="text" formControlName="email"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
